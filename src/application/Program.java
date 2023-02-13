@@ -1,7 +1,6 @@
 package application;
 
 import java.util.List;
-
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
 import model.entities.Department;
@@ -23,5 +22,12 @@ public class Program {
 		for (Seller obj : list) {
 			System.out.println(obj);
 		}
+
+		System.out.println("\n=== TEST 3: seller findAll =====");
+		list = sellerDao.findAll();
+		for (Seller obj : list) {
+			System.out.println(obj);
+		}
+
 	}
 }
